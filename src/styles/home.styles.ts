@@ -25,6 +25,11 @@ export const Info = styled.div`
 
 export const LogoLink = styled.a`
     display: block;
+
+    img {
+        width: 250px !important;
+        max-height: 100px !important;
+    }
 `;
 
 export const InfoArea = styled.div`

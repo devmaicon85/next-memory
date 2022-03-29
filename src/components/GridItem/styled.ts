@@ -5,17 +5,33 @@ type ContainerProps = {
 };
 export const Container = styled.div<ContainerProps>`
     background-color: ${(props) =>
-        props.showBackground ? "#1550FF" : "#E2E3E3"};
+        props.showBackground ? "#024c93" : "#E2E3E3"};
 
     height: 100px;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     cursor: pointer;
 
     img {
-        width: 40px !important;
-        height: 40px !important;
+        width: 65px !important;
+        max-height: 65px !important;
     }
+
+    svg {
+        width: 50px !important;
+        height: 50px !important;
+        color: #fff;
+    }
+`;
+
+export const Flipper = styled.div`
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.8s;
 `;

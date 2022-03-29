@@ -4,8 +4,9 @@ import * as C from "../styles/home.styles";
 import { InfoItem } from "../components/InfoItem";
 import { Button } from "../components/Button";
 
+import { MdOutlineRestartAlt } from "react-icons/md";
+
 import logoImage from "../../public/assets/logo.png";
-import RestartIcon from "../../public/assets/svgs/restart.svg";
 
 import items from "../data/items";
 import { useEffect, useState } from "react";
@@ -130,7 +131,7 @@ const Home: NextPage = () => {
         <C.Container>
             <C.Info>
                 <C.LogoLink href="">
-                    <Image src={logoImage} width={250} height={50} alt="" />
+                    <Image src={logoImage} alt="" />
                 </C.LogoLink>
                 <C.InfoArea>
                     <InfoItem
@@ -140,7 +141,7 @@ const Home: NextPage = () => {
                     <InfoItem label="Movimentos" value={moveCount.toString()} />
                 </C.InfoArea>
                 <Button
-                    icon={RestartIcon}
+                    icon={<MdOutlineRestartAlt />}
                     label="Reiniciar"
                     onClick={handleResetAndCreateGrid}
                 />
