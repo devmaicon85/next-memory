@@ -8,7 +8,7 @@ const nextConfig = {
 };
 
 module.exports = {
-    pageExtensions: [".tsx"], // somente arquivos .tsx são paginas
+    pageExtensions: ["*.tsx"], // somente arquivos .tsx são paginas
 };
 
 module.exports = nextConfig;
